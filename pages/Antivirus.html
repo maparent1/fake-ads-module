@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NullPointer Antivirus - Votre ligne de défense ultime</title>
+    <style>
+        :root {
+            --main-green: #28a745; /* Vert de sécurité */
+            --dark-blue: #0f1c2d; /* Fond sombre */
+            --light-grey: #e9ecef;
+            --text-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-blue);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .antivirus-dashboard {
+            max-width: 800px;
+            background: #1a2b3d;
+            border-radius: 15px;
+            box-shadow: 0 0 40px rgba(0, 255, 0, 0.2); /* Ombre verte pour l'effet sécurité */
+            padding: 40px;
+            margin: 20px;
+            border: 1px solid #34495e;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .logo-section img {
+            width: 80px;
+            height: auto;
+            margin-right: 20px;
+            filter: drop-shadow(0 0 8px rgba(0, 255, 0, 0.5));
+        }
+
+        .logo-section h1 {
+            font-size: 2.8rem;
+            color: var(--main-green);
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+            margin: 0;
+        }
+
+        .tagline {
+            font-size: 1.3rem;
+            color: #ccc;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .scan-status {
+            background: #21354b;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border: 1px solid #34495e;
+        }
+
+        .scan-status h2 {
+            font-size: 1.8rem;
+            color: var(--main-green);
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .progress-bar-container {
+            width: 80%;
+            background-color: #34495e;
+            border-radius: 5px;
+            height: 25px;
+            margin: 0 auto 15px auto;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            width: 0%; /* Sera animé par JS */
+            height: 100%;
+            background-color: var(--main-green);
+            border-radius: 5px;
+            text-align: center;
+            line-height: 25px;
+            color: white;
+            font-weight: bold;
+            transition: width 3s ease-out;
+            animation: scanning 3s forwards;
+        }
+        @keyframes scanning {
+            from { width: 0%; }
+            to { width: 100%; }
+        }
+
+        .scan-info {
+            font-size: 0.95rem;
+            color: #a0a0a0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--main-green);
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            box-shadow: 0 8px 20px rgba(0, 255, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            background-color: #1e7e34;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(0, 255, 0, 0.4);
+        }
+
+        .security-notes {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="antivirus-dashboard">
+    <div class="logo-section">
+        <img src="https://raw.githubusercontent.com/maparent1/ImagesProjetTest/main/assets/Antivirus.png" alt="NullPointer Antivirus Logo">
+        <h1>NullPointer Antivirus</h1>
+    </div>
+    
+    <p class="tagline">
+        Parce qu'un null non détecté, c'est un bug qui dort...<br>
+        Notre IA (Intelligent Analyser) veille sur votre code.
+    </p>
+
+    <div class="scan-status">
+        <h2>Statut : Système sécurisé (pour l'instant)</h2>
+        <div class="progress-bar-container">
+            <div class="progress-bar" id="progressBar">Analyse en cours...</div>
+        </div>
+        <p class="scan-info">
+            Dernière analyse complète : Il y a 5 minutes<br>
+            Fichiers analysés : 1,423,567 lignes de code<br>
+            Menaces détectées : 0 (pour l'instant 😉)
+        </p>
+    </div>
+
+    <a href="#" class="cta-button" onclick="alert('Démarrage du scan de NullPointer... Préparez-vous à une refactorisation massive !')">Télécharger la Version Beta</a>
+
+    <p class="security-notes">
+        Compatible avec Java, C#, Python, JavaScript et votre café.
+    </p>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const progressBar = document.getElementById('progressBar');
+        // Simple animation pour le fun
+        setTimeout(() => {
+            progressBar.style.width = '100%';
+            progressBar.textContent = '100% - OK';
+        }, 500); // Démarre l'animation après un court délai
+    });
+</script>
+
+</body>
+</html>

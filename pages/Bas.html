@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bas 404 Error - Le confort avant tout</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf5e6; /* Couleur crème chaleureuse */
+            color: #4a4a4a;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .image-container {
+            position: relative;
+            background: #e9ecef;
+        }
+
+        .image-container img {
+            width: 100%;
+            display: block;
+        }
+
+        .content {
+            padding: 2.5rem;
+        }
+
+        h1 {
+            color: #d35400; /* Orange rappelant les rayures */
+            margin-top: 0;
+            font-size: 2rem;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .specs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 1rem 0;
+        }
+
+        .spec-item {
+            font-size: 0.9rem;
+        }
+
+        .spec-item span {
+            display: block;
+            font-weight: bold;
+            color: #d35400;
+        }
+
+        .buy-btn {
+            background-color: #d35400;
+            color: white;
+            text-decoration: none;
+            padding: 18px 40px;
+            border-radius: 10px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .buy-btn:hover {
+            background-color: #a04000;
+        }
+
+        .disclaimer {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="product-card">
+        <div class="image-container">
+            <img src="https://raw.githubusercontent.com/maparent1/ImagesProjetTest/main/assets/Bas.png" alt="Bas 404 Error">
+        </div>
+        
+        <div class="content">
+            <h1>Bas 404 Error: Feet Not Found</h1>
+            <p class="description">
+                <strong>"Portées par les devs qui ne quittent jamais leur bureau."</strong><br>
+                Marre que vos pieds soient introuvables par le monde extérieur ? Nos chaussettes haute performance cachent votre présence physique tout en optimisant votre confort thermique.
+            </p>
+
+            <div class="specs">
+                <div class="spec-item"><span>Matière</span>Coton 100% pur code</div>
+                <div class="spec-item"><span>Protocole</span>TCP/IP (Très Chaud Pour l'Hiver)</div>
+                <div class="spec-item"><span>Statut</span>Indexé</div>
+            </div>
+
+            <a href="#" class="buy-btn" onclick="alert('Requête envoyée au serveur... Réponse : Vos pieds sont trop confortables pour bouger !')">AJOUTER AU PANIER</a>
+
+            <p class="disclaimer">Note : Ne garantit pas l'invisibilité réelle devant votre manager.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

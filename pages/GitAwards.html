@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Awards 2026 - La cérémonie des développeurs</title>
+    <style>
+        :root {
+            --primary-purple: #7b2cbf;
+            --neon-glow: #9d4edd;
+            --dark-bg: #120d21;
+            --text-light: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .main-card {
+            max-width: 500px;
+            width: 90%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--neon-glow);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(157, 78, 221, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .event-poster {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 15px var(--neon-glow);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px var(--neon-glow);
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: #bbb;
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            background: var(--primary-purple);
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .cta-btn {
+            display: block;
+            background: transparent;
+            color: #fff;
+            border: 2px solid var(--neon-glow);
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .cta-btn:hover {
+            background: var(--neon-glow);
+            box-shadow: 0 0 20px var(--neon-glow);
+            transform: translateY(-3px);
+        }
+
+        .terminal-text {
+            font-size: 0.8rem;
+            color: #4ead7d;
+            margin-top: 1.5rem;
+            text-align: left;
+            border-top: 1px solid #333;
+            padding-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-card">
+    <img src="https://raw.githubusercontent.com/maparent1/ImagesProjetTest/main/assets/GitAwards.png" alt="Git Awards 2026" class="event-poster">
+    
+    <h1>Git Awards 2026</h1>
+    <p class="description">
+        Célébrons l'art du code, des commits légendaires aux pires conflits de merge. Qui remportera le trophée du commit le plus cryptique ?
+    </p>
+
+    <div class="categories">
+        <span class="badge">#BestCommitMessage</span>
+        <span class="badge">#WorstMergeConflict</span>
+        <span class="badge">#ForcePushMaster</span>
+        <span class="badge">#BugAsFeature</span>
+    </div>
+
+    <a href="#" class="cta-btn" onclick="checkNomination()">Vérifier ma nomination</a>
+
+    <div class="terminal-text">
+        $ git status<br>
+        > Your nomination is pending review...<br>
+        > 0 errors, 1 event found.
+    </div>
+</div>
+
+<script>
+    function checkNomination() {
+        const nom = prompt("Entrez votre nom d'utilisateur GitHub :");
+        if(nom) {
+            alert("Félicitations " + nom + " ! Vous êtes nominé pour le prix 'Fixing a bug while creating 3 others'.");
+        }
+    }
+</script>
+
+</body>
+</html>
