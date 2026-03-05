@@ -16,24 +16,24 @@ const interstitials = [
     title: 'Oreiller Ctrl+Alt+Sleep',
     text: 'Oreiller ergonomique, anti-burnout, livré avec une heure de sommeil offerte',
     background: '#42f45a',
-    image: {uri: "https://raw.githubusercontent.com/maparent1/ImagesProjetTest/main/assets/Oreiller.png"},
-    url: 'https://maparent1.github.io/ImagesProjetTest/Oreiller.html'
+    image: {uri: "https://raw.githubusercontent.com/maparent1/fake-ads-module/main/assets/Oreiller.png"},
+    url: 'https://maparent1.github.io/fake-ads-module/pages/Oreiller.html'
   },
   {
     id: 2,
     title: 'Évennement : Git Awards 2026',
     text: 'Meilleur commit message, pire merge conflict… Es-tu nominé ?',
     background: '#f442f4',
-    image: {uri:"https://raw.githubusercontent.com/maparent1/ImagesProjetTest/main/assets/GitAwards.png"},
-    url: 'https://maparent1.github.io/ImagesProjetTest/Oreiller.html'
+    image: {uri:"https://raw.githubusercontent.com/maparent1/fake-ads-module/main/assets/GitAwards.png"},
+    url: 'https://maparent1.github.io/fake-ads-module/pages/GitAwards.html'
   },
   {
     id: 3,
     title: 'Bas 404 Error: Feet Not Found',
     text: 'Portées par les devs qui ne quittent jamais leur bureau',
     background: '#f4a742',
-    image: {uri: "https://raw.githubusercontent.com/maparent1/ImagesProjetTest/main/assets/Bas.png"},
-    url: 'https://maparent1.github.io/ImagesProjetTest/Oreiller.html'
+    image: {uri: "https://raw.githubusercontent.com/maparent1/fake-ads-module/main/assets/Bas.png"},
+    url: 'https://maparent1.github.io/fake-ads-module/pages/Bas.html'
   }
 ]
 
