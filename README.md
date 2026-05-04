@@ -1,4 +1,4 @@
-# react-native-fake-ads
+# fake-ads-module
 
 > **Module pédagogique – Fausses publicités pour React Native**
 
@@ -26,7 +26,7 @@ Ce module permet aux étudiants de :
 ## Installation
 
 ```bash
-npm npm install git+https://github.com/maparent1/fake-ads-module.git
+npm install git+https://github.com/maparent1/fake-ads-module.git
 ```
 
 ---
@@ -38,7 +38,7 @@ npm npm install git+https://github.com/maparent1/fake-ads-module.git
 Affiche une bannière en bas ou en haut de l'écran. La pub est choisie **aléatoirement** à chaque ouverture de l'app.
 
 ```jsx
-import { BannerAd } from 'react-native-fake-ads';
+import { BannerAd } from 'fake-ads-module';
 
 <BannerAd size="BANNER" />
 ```
@@ -58,7 +58,7 @@ import { BannerAd } from 'react-native-fake-ads';
 S'affiche par-dessus le contenu. Les pubs alternent à chaque fermeture.
 
 ```jsx
-import { InterstitialAd } from 'react-native-fake-ads';
+import { InterstitialAd } from 'fake-ads-module';
 
 <InterstitialAd
   visible={isVisible}
@@ -78,7 +78,7 @@ import { InterstitialAd } from 'react-native-fake-ads';
 L'utilisateur doit regarder la pub pendant **10 secondes** avant de pouvoir réclamer sa récompense. Le bouton ✖️ est bloqué pendant ce délai.
 
 ```jsx
-import { RewardedAd } from 'react-native-fake-ads';
+import { RewardedAd } from 'fake-ads-module';
 
 <RewardedAd
   visible={isVisible}
